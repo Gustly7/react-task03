@@ -4,7 +4,7 @@ class SearchResults extends Component {
     render() {
         return (
             <div className="SearchResults">
-                1 movies found
+                <span className='white-font'>1 movies found</span>
             </div>
         );
     }

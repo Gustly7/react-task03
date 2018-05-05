@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ErrorBoundary extends React.Component {
+class ErrorBoundary extends Component {
     constructor(props) {
         super(props);
         this.state = { error: null, errorInfo: null };
@@ -20,12 +20,8 @@ class ErrorBoundary extends React.Component {
             // Error path
             return (
                 <div>
-                    <h2>Something went wrong.</h2>
-                    <details style={{ whiteSpace: 'pre-wrap' }}>
+                    <h2>Что-то пошло не так</h2>
                         {this.state.error && this.state.error.toString()}
-                        <br />
-                        {this.state.errorInfo.componentStack}
-                    </details>
                 </div>
             );
         }

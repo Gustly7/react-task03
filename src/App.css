@@ -22,7 +22,18 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.filmList{
+  display: flex;
+  flex-flow: wrap;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  background: #414141;
+  width: 100%;
+  height: 25px;
+}
+.footer span{
+  float: left;
 }
